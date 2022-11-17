@@ -80,7 +80,7 @@ class kthFlow:
     def get_pos(self):
         return nx.spring_layout(self.G)
 
-    def print_result(self, source, target):
+    def print_next_result(self, source, target):
         ##flow
         self.bfs(source, target)
         new_flow = INF
