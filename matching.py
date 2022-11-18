@@ -36,7 +36,7 @@ class MaximumMatching:
     ############################################################################
     ############################################################################
     def print_result(self):
-        print(self.max_maching())
+        print("The maximum matching is", self.max_maching())
         G = nx.DiGraph()
 
         for i in range(1, self.set1_num + 1):

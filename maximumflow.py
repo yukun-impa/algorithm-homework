@@ -77,7 +77,7 @@ class MaximumFlow:
         return visited
     
     def print_result(self, source, target):
-        print(self.maximumflow(source, target))
+        print("The maximum flow is", self.maximumflow(source, target))
         st = self.minimumcut(source, target)
         G = self.G
         for i in range(1, self.nodes_num + 1):

@@ -33,7 +33,6 @@ class MaximumMatching2:
         return False
     
     def find_matching(self):
-        res = 0
         while True:
             self.dfn += 1
             count = 0
@@ -42,15 +41,15 @@ class MaximumMatching2:
                     count += 1
             if count == 0:
                 break
-            res += count
-        return res
+            self.res += count
+        return self.res
 
 
     #Please ignore the following codes. They are just used to draw the pictures#
     ############################################################################
     ############################################################################
     def print_result(self):
-        print(self.find_matching())
+        print("The maximum matchings is", self.find_matching())
         G = nx.DiGraph()
         
         for i in range(1, self.set1_num + 1):
