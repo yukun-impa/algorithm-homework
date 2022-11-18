@@ -81,4 +81,4 @@ class MaximumMatching2:
         nx.draw(G, pos=pos, edge_color=colors, with_labels=True)
    
     def num2char(self, i):
-        return str(i)
+        return str(i) + "'"
