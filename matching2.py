@@ -67,7 +67,7 @@ class MaximumMatching2:
         
         for i in range(1, self.set1_num + 1):
             if self.parent_a[i] != -1:
-                G.add_edge(i, self.num2char(self.parent_a[i]), color = 'red')
+                G.add_edge(self.num2char(self.parent_a[i]), i, color = 'red')
 
         m = self.set1_num
         n = self.set2_num
